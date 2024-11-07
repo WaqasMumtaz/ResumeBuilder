@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2>Personal Information</h2>
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <label for="picture">Upload Picture</label>
+            <input type="file" id="picture" accept="image/*">
+
+            <h2>About Me</h2>
+            <textarea id="about" placeholder="Brief introduction about yourself" required></textarea>
+
+            <h2>Skills</h2>
+            <textarea id="skills" placeholder="List your skills" required></textarea>
+
+            <h2>Hobbies</h2>
+            <textarea id="hobbies" placeholder="List your hobbies" required></textarea>
+
+            <h2>Experience</h2>
+            <textarea id="experience" placeholder="Describe your work experience" required></textarea>
+
+            <h2>Education</h2>
+            <textarea id="education" placeholder="Describe your education background" required></textarea>
+
+            <button onclick="generateResume()">Generate Resume</button>
+        </div>
+    </div>
+
+    <!-- Resume Preview Section -->
+    <div class="resume-preview" id="resumeContent">
+        <!-- Generated resume content will go here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
